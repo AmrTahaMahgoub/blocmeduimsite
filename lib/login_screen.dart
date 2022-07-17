@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'bloc_bloc.dart';
+import 'constants.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -76,7 +77,7 @@ class TryIn extends StatelessWidget {
                       // when i press give me button sheet in the Try in screen ;
                       context.read<LoginBloc>().add(MissionThreeEvent());
                     },
-                    child: Text('MISSION THREE')),
+                    child: Text('MISSION THREE',style: Ktxt,)),
                 textstate(state),
               ],
             ),
